@@ -1,0 +1,61 @@
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <h3>Email History</h3>
+            
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Messge</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let email of allemailHistory">
+                    <th scope="row">{{email.id}}</th>
+                    <td>{{email.to}}</td>
+                    <td>{{email.subject}}</td>
+                    <td>{{email.message}}</td>
+                    <td><button mat-raised-button color="warn" (click)="deleteEmails(email)">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
+    </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <h3>Email History</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">To</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Message</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let email of allemailHistory">
+            <th scope="row">{{email.id}}</th>
+            <td>{{email.to}}</td>
+            <td>{{email.subject}}</td>
+            <td>{{email.message}}</td>
+            <td>
+              <button mat-raised-button color="warn" (click)="deleteRecord(email)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

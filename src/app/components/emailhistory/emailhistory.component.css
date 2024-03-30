@@ -1,0 +1,38 @@
+
+    /* Container styles */
+    .container {
+        width: 80%;
+        /* max-width: 1140px; Adjust as needed */
+        margin: 0 auto;
+    }
+
+    /* Table styles */
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        border-collapse: collapse;
+    }
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        text-align: center;
+        border-top: 1px solid #dee2e6;
+    }
+
+    /* Table striped styles */
+    .table-striped tbody tr:nth-of-type(odd) {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    /* Text styles */
+    h3 {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+
